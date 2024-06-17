@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MedicineTracker</string>
+    <string name="reminder_times">Reminder Times:</string>
+    <string name="dosage_per_day">Dosage (Per Day):</string>
+    <string name="tablet">Tablet</string>
+    <string name="capsules">Capsules</string>
+    <string name="drops">Drops</string>
+    <string name="time">Time</string>
+    <string name="_00_00">00:00</string>
+    <string name="set_a_date">Set a Date</string>
+    <string name="timee">Time:</string>
+    <string name="dd_mm_yy">dd/MM/YY</string>
+    <string name="set_a_datee">Set a Date:</string>
+    <string name="alarm">Alarm:</string>
+    <string name="proceed">Proceed</string>
+    <string name="program">Program:</string>
+    <string name="select_an_image">Select an Image</string>
+    <string name="dd_dd_yy2">dd/DD/YY</string>
+    <string name="pill_of_capsule">pill of capsule</string>
+    <string name="_2_times">2 times</string>
+    <string name="_100mg">100mg</string>
+    <string name="save">Save</string>
+    <string name="on">ON</string>
+    <string-array name="reminder_times_array">
+        <item>Once</item>
+        <item>Twice</item>
+        <item>Thrice</item>
+        <item>Everyday</item>
+        <item>Every week</item>
+        <item>Every month</item>
+    </string-array>
+
+
+    <string-array name="times_array">
+        <item>1 time</item>
+        <item>2 times</item>
+    </string-array>
+
+
+</resources>

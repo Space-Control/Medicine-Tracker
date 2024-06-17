@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/top" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="-140dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/setting" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine\nReminder"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/featherbold" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/md1"
+            android:fontFamily="@font/featherbold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_section"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/mid">
+
+        <Button
+            android:id="@+id/Monday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21\nMon"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:fontFamily="@font/featherbold"
+            android:background="@drawable/date_background" />
+
+        <Button
+            android:id="@+id/Tuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22\nTue"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/date_background"
+            android:fontFamily="@font/featherbold"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/Wednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23\nWed"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:background="@drawable/date_background"
+            android:fontFamily="@font/featherbold"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/bottom_section"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@drawable/baseline_read_more_24"
+        android:drawablePadding="8dp"
+        android:padding="18dp"
+        android:text=""
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="5dp"
+        android:layout_marginStart="310dp"/>
+
+
+</LinearLayout>

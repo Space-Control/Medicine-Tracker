@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/statuscircle"
+            android:layout_width="1dp"
+            android:layout_height="66dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/statusred" />
+
+        <LinearLayout
+            android:layout_width="46dp"
+            android:layout_height="118dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="26sp">
+
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="34dp"
+                android:layout_height="29dp"
+                android:src="@drawable/green_and_white" />
+
+            <TextView
+                android:id="@+id/nameofpill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pill_of_capsule"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/quantityofpill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_2_times"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_100mg"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:00 PM"
+
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="dd/MM/yy"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/takenBTN"
+            android:layout_width="18dp"
+            android:layout_height="41dp"
+            android:layout_weight="1"
+            android:text="Taken"
+            android:onClick="taken"
+            />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

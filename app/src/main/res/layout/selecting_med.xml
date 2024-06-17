@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003398"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@drawable/back"
+        android:drawablePadding="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:text=""
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/capsuleImage"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/btn"
+        android:text="Select an Image"
+        android:padding="8dp" />
+
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="130dp"
+        android:contentDescription="Selected Image"
+        android:layout_alignLeft="@+id/capsuleImage"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/backButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="140dp"
+        android:text="Description"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/whitecard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capsuleImage"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/roundedplain"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/dosageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dosage"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:fontFamily="@font/featherbold"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dosageText"
+            android:layout_marginTop="8dp"
+            android:text="Times per day:"
+            android:fontFamily="@font/featherbold"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="At"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="120dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/featherbold"
+            />
+
+        <TextView
+            android:id="@+id/texttimes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timesText"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/featherbold"
+            android:text="1 time"
+            />
+
+
+        <TextView
+            android:id="@+id/textoftime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="58dp"
+            android:background="#00FFEB3B"
+            android:focusable="false"
+            android:fontFamily="@font/featherbold"
+            android:padding="4dp"
+            android:text="00:00"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="58dp"
+            android:layout_marginStart="220dp"
+            android:padding="4dp"
+            android:text="@string/on"
+            android:fontFamily="@font/featherbold"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:focusable="false" />
+
+
+        <TextView
+            android:id="@+id/textofdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="58dp"
+            android:focusable="false"
+            android:fontFamily="@font/featherbold"
+            android:padding="4dp"
+            android:text="@string/dd_dd_yy2"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+
+
+
+        <TextView
+            android:id="@+id/mg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texttimes"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/featherbold"
+            android:text="Input the MG/ML of medicine"
+            />
+
+        <EditText
+            android:id="@+id/inputmg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texttimes"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/featherbold"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/whitecard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn"
+        android:text="@string/save"
+        android:textSize="13sp"
+        android:fontFamily="@font/featherbold" />
+
+</RelativeLayout>
